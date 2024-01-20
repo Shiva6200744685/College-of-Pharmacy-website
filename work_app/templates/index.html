@@ -1,0 +1,249 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main page </title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylsheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="{% static 'img/logo.png' %}"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/about">ABOUT</a></li>
+                    <li><a href="/course">COURSE</a></li>
+                    <li><a href="/blog">BLOG</a></li>
+                    <li><a href="/contact">CONTACT</a></li>
+                </ul>
+
+
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h4>SHRI MAHESH MOHINI MEMORIAL</h4>
+            <H5>COLLEGE OF PHARMACY</H5>
+            <h6>तन्मे मनः शिवसंकल्पमस्तु ।</h6>
+            <p> </p>
+            <a href="" class="hero-btn">Visit Us To Know More</a>
+        </div>
+
+    </section>
+    <!-- --------------------------------Course -------------------------->
+    <section class="course">
+        <h1>Programmes We Offer</h1>
+        <p>Medical colleges typically offer a wide range of programmes related to medicine and healthcare
+            <br> 1.Bachelor of Medicine, Bachelor of Surgery (MBBS)
+            <br> 2.Bachelor of Pharmacy (B.Pharm)
+            <br>3.Bachelor of Science (B.Sc.) in Nursing
+            <br> 4.Bachelor of Dental Surgery (BDS)
+            <br> 5.Doctor of Medicine (MD)
+        </p>
+        <div class="row">
+            <div class="course-col">
+                <h3>2.Bachelor of Pharmacy (B.Pharm)</h3>
+                <p>The Bachelor of Pharmacy (B.Pharm) is an undergraduate academic degree in the field of pharmacy. It
+                    is the basic prerequisite for registration to practice as a pharmacist in many countries.The
+                    Bachelor of Pharmacy program provides students with a solid foundation in pharmaceutical sciences
+                    and prepares them for a wide range of careers in the pharmaceutical and healthcare industries.</p>
+
+            </div>
+            <div class="course-col">
+                <h3>Bachelor of Dental Surgery (BDS)</h3>
+                <p>The Bachelor of Dental Surgery (BDS) is an undergraduate professional degree in dentistry. It is a
+                    foundational qualification for individuals who wish to become dentists and practice dentistry.The
+                    BDS program provides students with comprehensive training in dentistry, equipping them with the
+                    knowledge and skills necessary to become competent dental professionals and contribute to oral
+                    healthcare delivery.</p>
+
+            </div>
+            <div class="course-col">
+                <h3>Bachelor of Science (B.Sc.) in Nursing</h3>
+                <p>The Bachelor of Science in Nursing (B.Sc. Nursing) is an undergraduate degree program that prepares
+                    students for a career in nursing.The B.Sc. Nursing program provides students with a solid foundation
+                    in nursing theory and practice, preparing them to deliver high-quality patient care and contribute
+                    to the healthcare system as competent and compassionate nurses.</p>
+
+            </div>
+        </div>
+    </section>
+    <!-------------------------- campus------------------ -->
+    <section class="campus">
+        <h1>Our Global Campus</h1>
+        <p>an educational institution or university with a global presence, offering programs and courses that attract
+            students from around the world. These campuses often emphasize international perspectives, diverse cultural
+            experiences, and collaborations with institutions worldwide. Students at global campuses may benefit from a
+            multicultural environment, exposure to a variety of academic disciplines, and opportunities for
+            international networking.
+
+            Global campuses may also facilitate exchange programs, allowing students to study abroad or participate in
+            internships with partner institutions. The aim is to create a dynamic learning environment that prepares
+            students for a globalized world, fostering cross-cultural understanding and promoting collaboration on a
+            global scale.</p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="{% static 'img/london.png' %}" alt="wait for image loading">
+                <div class="layer">
+                    <h3>DELHI</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="{% static 'img/newyork.png' %}" alt="wait for image loading">
+                <div class="layer">
+                    <h3>BHOPAL</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="{% static 'img/washington.png' %}" alt="wait for image loading">
+                <div class="layer">
+                    <h3>PATNA</h3>
+                </div>
+    </section>
+    <!-- ---------------facilities------------------- -->
+    <section class="facilities">
+        <h1>Our Facilities </h1>
+        <p>The facilities available at SHRI MAHESH MOHINI MEMORIAL college of pharmacy are as follows:<br>
+
+            Classrooms and Lecture Halls: These are equipped with modern teaching aids such as audio-visual equipment to facilitate effective learning.
+            
+        <br> Laboratories: Pharmacy colleges typically have various laboratories for pharmaceutical analysis, medicinal chemistry, pharmacology, pharmaceutics, and microbiology. These labs are equipped with instruments and equipment necessary for practical training and research.
+            
+          <br>  Library: A well-stocked library with a wide range of books, journals, and electronic resources related to pharmacy and allied sciences is essential for academic research and study.
+            
+          <br>  Computer Facilities: Access to computers and the internet is crucial for research, data analysis, and staying updated with the latest developments in pharmacy.
+            
+          <br>  Research Facilities: Many colleges of pharmacy have dedicated research facilities where faculty and students can conduct research in pharmaceutical sciences.
+            
+          <br>  Pharmacy Practice Laboratory: Some colleges may have a simulated pharmacy practice laboratory where students can learn about dispensing medications, patient counseling, and other aspects of pharmacy practice in a controlled environment.
+            
+          <br>  Animal House: For institutions involved in pharmacology research, an animal house facility may be available for conducting experiments involving animals.  
+          <br>  Pharmacy Museum: Some institutions have a pharmacy museum that showcases the history of pharmacy and pharmaceuticals, which can be an educational resource for students.
+            
+          <br>  Auditorium and Seminar Halls: These are used for hosting seminars, conferences, and other academic events.
+            
+          <br>  Cafeteria and Recreational Facilities: These are important for the overall well-being of students, providing them with a space to relax and socialize.</p>
+        <div class="row"></div>
+        <div class="facilities-col">
+            <img src="{% static 'img/library.png' %}">
+            <h3>World Class Library</h3>
+            <p>A world-class library serves as a cornerstone for academic excellence and intellectual growth within an
+                educational institution. Such a facility goes beyond the traditional role of storing books; it becomes a
+                dynamic hub for learning, research, and collaboration. In a world-class library, one can find an
+                extensive and diverse collection of books, periodicals, and digital resources, catering to various
+                academic disciplines and interests.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="{% static 'img/basketball.png' %}">
+            <h3>Largest play Ground</h3>
+            <p>A large playground in a school offers a multitude of benefits for students, contributing significantly to
+                their physical, social, and cognitive development</p>
+
+
+        </div>
+        <div class="facilities-col">
+            <img src="{% static 'img/cafeteria.png' %}">
+            <h3>Tasty and Healthy Food</h3>
+            <p> Tasty and healthy food plays a crucial role in supporting the overall well-being and academic
+                performance of students in a school. Here are several ways in which nutritious and delicious meals can
+                be beneficial:</p>
+
+        </div>
+        </div>
+
+    </section>
+    <!-- --------------testimonials----------------- -->
+    <section class="testimonials">
+
+        <h1>What Our Students Says</h1>
+        <p>The school's commitment to holistic development is evident in its emphasis on character building and values.
+            The ethical foundation instilled during my time at [School Name] continues to guide my decisions, both in my
+            career and personal life. The school's focus on cultural diversity also broadened my perspective and
+            prepared me for a globalized world.</p>
+        <div class="row">
+            <div class="testimonials-col">
+                <img src="{% static 'img/user1.jpg' %}">
+                <div>
+                    <p>One of the standout features of [School Name] is its vibrant and inclusive community. The
+                        friendships I formed during my time there have endured, creating a network of support both
+                        personally and professionally. The extracurricular opportunities, from clubs to sports, added a
+                        dynamic layer to my education, fostering leadership skills and a sense of responsibility.</p>
+                    <h3>Iqbal Ansari</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="testimonials-col">
+                <img src="{% static 'img/user2.jpg' %}">
+                <div>
+                    <p>As a proud alumna of [School Name], I can confidently say that my years at this institution were
+                        transformative. The academic rigor and diverse range of courses not only equipped me with the
+                        knowledge and skills needed for my career but also fostered a love for lifelong learning. The
+                        dedicated faculty members were not just educators but mentors who guided and inspired me to
+                        pursue excellence.</p>
+                    <h3>Firdoush Ali</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </section>
+    <!-- ----------------call to action-------------- -->
+    <section class="cta">
+        <h1>Enroll For Our Various Online Courses <br> Anywhere From The World</h1>
+        <a href="" class="hero-btn">CONTACT US</a>
+    </section>
+    <!-- ------------Footer------------------ -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>The SHRI MAHESH MOHINI MEMORIAL College of Pharmacy has been started with a vision to be the preferred destination for pharmacy education in the world. It has the primary aim of developing qualified and trained pharmacists who deliver pharmaceutical care to the citizens either independently or in collaboration with other pharmaceutical industries. Efforts are made true at this institute to make it the preferred destination in the field of the pharmacy profession.Pharmacy is a noble profession and pharmacists play a vital role in the healthcare system. The pharmacy profession offers diverse opportunities in research, teaching, hospitals, drug administration, pharmaceutical industries, etc.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkdin"></i>
+            <i class="fa fa-twitter"></i>
+        </div>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Shiva Nath </p>
+
+
+    </section>
+    <!-------------- Javascript for toggle menu------------------ -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>

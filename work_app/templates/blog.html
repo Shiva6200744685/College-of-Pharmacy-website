@@ -1,0 +1,100 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog page</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylsheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="{% static 'img/logo.png' %}"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/about">ABOUT</a></li>
+                    <li><a href="/course">COURSE</a></li>
+                    <li><a href="/blog">BLOG</a></li>
+                    <li><a href="/contact">CONTACT</a></li>
+                </ul>
+
+
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Certificates and online programs for 2023</h1>
+
+
+    </section>
+    <!-- ---------blog page content--------------------- -->
+   <section>
+    <div class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="{% static 'img/certificate.jpg' %}" alt="wait till image is loading" >
+                <h2>Our Certificates and online programs for 2023</h2>
+            </div>
+            <div class="blog-right">
+                <h1>{{ post.title }}</h1>
+                <p>{{ post.content }}</p>
+                <p>Author: {{ post.author }}</p>
+                <p>Published date: {{ post.published_date }}</p>
+                {% if post.image %}
+                    <img src="{% static 'img/{{ post.image.url }}' %}" alt="{{ post.title }}">
+                {% endif %}
+                
+            </div>
+        </div>
+    </div>
+   </section>
+
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Our curriculum is designed to be dynamic and forward-thinking, preparing students not only for academic
+            success but also for the challenges of an ever-evolving global landscape.<br> We emphasize a holistic
+            approach
+            to education, recognizing the importance of nurturing not just the mind but also the heart and spirit.<br>
+            Beyond the classrooms, [School Name] thrives on a vibrant and inclusive community. <br>We celebrate
+            diversity
+            and provide a supportive environment where students from various backgrounds come together to learn, grow,
+            and form lifelong connections. <br>Our commitment to character building and values instills in students a
+            sense
+            of responsibility, empathy, and integrity.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkdin"></i>
+            <i class="fa fa-twitter"></i>
+        </div>
+
+
+    </section>
+    <!-------------- Javascript for toggle menu------------------ -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>

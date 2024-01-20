@@ -1,0 +1,156 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course page</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylsheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="{% static 'img/logo.png' %}"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/about">ABOUT</a></li>
+                    <li><a href="/course">COURSE</a></li>
+                    <li><a href="/blog">BLOG</a></li>
+                    <li><a href="/contact">CONTACT</a></li>
+                </ul>
+
+
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Courses</h1>
+
+
+    </section>
+    <!-- ------------------course  content-------------- -->
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p> Btech hkjgcttfgggyfytffftguhugyfdc uyggff guygtfd gyugydcrydybj hhtufrdjbhjv </p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>After class 10, students generally enroll in the 11th and 12th grades, which are often referred to as
+                    junior college or higher secondary school.
+                    Students can choose from three major streams: Science, Commerce, and Arts.
+                    The 12th-grade board exams, such as CBSE (Central Board of Secondary Education) or state board
+                    exams, are crucial for further education.</p>
+
+            </div>
+            <div class="course-col">
+                <h3>Graduation</h3>
+                <p>After class 10, students generally enroll in the 11th and 12th grades, which are often referred to as
+                    junior college or higher secondary school.
+                    Students can choose from three major streams: Science, Commerce, and Arts.
+                    The 12th-grade board exams, such as CBSE (Central Board of Secondary Education) or state board
+                    exams, are crucial for further education.</p>
+
+            </div>
+            <div class="course-col">
+                <h3>Post-graduation</h3>
+                <p>After class 10, students generally enroll in the 11th and 12th grades, which are often referred to as
+                    junior college or higher secondary school.
+                    Students can choose from three major streams: Science, Commerce, and Arts.
+                    The 12th-grade board exams, such as CBSE (Central Board of Secondary Education) or state board
+                    exams, are crucial for further education.</p>
+
+            </div>
+        </div>
+    </section>
+   <!-- -------------Facilities----------------------- -->
+   <section class="facilities">
+    <h1>Our Facilities </h1>
+    <p>A well-equipped school is essential for fostering a conducive learning environment, and modern educational
+        institutions strive to provide a range of facilities to support the holistic development of students.
+        Classrooms are equipped with the latest technology, including interactive whiteboards and audio-visual aids,
+        facilitating dynamic and engaging teaching methods. Science laboratories allow hands-on exploration,
+        fostering a practical understanding of scientific principles. Well-stocked libraries provide students access
+        to a diverse collection of books, encouraging research and reading habits. Sports facilities, such as
+        playgrounds and sports courts, promote physical fitness and teamwork. Additionally, schools often offer
+        computer labs with high-speed internet access to enhance digital literacy. Facilities like auditoriums and
+        assembly halls are designed for events, presentations, and performances, promoting artistic and cultural
+        activities. Furthermore, dedicated spaces for extracurricular activities, counseling services, and health
+        clinics contribute to the overall well-being of students. A comprehensive approach to facilities ensures
+        that a school becomes a nurturing space where students can excel academically, socially, and personally.</p>
+    <div class="row"></div>
+    <div class="facilities-col">
+        <img src="{% static 'img/library.png' %}">
+        <h3>World Class Library</h3>
+        <p>A world-class library serves as a cornerstone for academic excellence and intellectual growth within an
+            educational institution. Such a facility goes beyond the traditional role of storing books; it becomes a
+            dynamic hub for learning, research, and collaboration. In a world-class library, one can find an
+            extensive and diverse collection of books, periodicals, and digital resources, catering to various
+            academic disciplines and interests.</p>
+    </div>
+    <div class="facilities-col">
+        <img src="{% static 'img/basketball.png' %}">
+        <h3>Largest play Ground</h3>
+        <p>A large playground in a school offers a multitude of benefits for students, contributing significantly to
+            their physical, social, and cognitive development</p>
+
+
+    </div>
+    <div class="facilities-col">
+        <img src="{% static 'img/cafeteria.png' %}">
+        <h3>Tasty and Healthy Food</h3>
+        <p> Tasty and healthy food plays a crucial role in supporting the overall well-being and academic
+            performance of students in a school. Here are several ways in which nutritious and delicious meals can
+            be beneficial:</p>
+
+    </div>
+    </div>
+
+</section>
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Our curriculum is designed to be dynamic and forward-thinking, preparing students not only for academic
+            success but also for the challenges of an ever-evolving global landscape.<br> We emphasize a holistic
+            approach
+            to education, recognizing the importance of nurturing not just the mind but also the heart and spirit.<br>
+            Beyond the classrooms, [School Name] thrives on a vibrant and inclusive community. <br>We celebrate
+            diversity
+            and provide a supportive environment where students from various backgrounds come together to learn, grow,
+            and form lifelong connections. <br>Our commitment to character building and values instills in students a
+            sense
+            of responsibility, empathy, and integrity.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkdin"></i>
+            <i class="fa fa-twitter"></i>
+        </div>
+
+
+    </section>
+    <!-------------- Javascript for toggle menu------------------ -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>
